@@ -16,3 +16,7 @@ UPSTREAM_URLS = "https://dns.google/dns-query,https://cloudflare-dns.com/dns-que
 ENABLE_ECS = "true"
 CACHE_TTL = "300"
 BLOCK_MODE = "nxdomain"   # or "null" for 0.0.0.0 sinkhole
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
