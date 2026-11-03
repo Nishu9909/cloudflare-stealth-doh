@@ -1,0 +1,18 @@
+name = "stealth-doh"
+main = "src/_worker.js"
+compatibility_date = "2026-01-01"
+
+[[kv_namespaces]]
+binding = "BLOCKLIST"
+id = "YOUR_BLOCKLIST_KV_ID"
+
+[[kv_namespaces]]
+binding = "ALLOWLIST"
+id = "YOUR_ALLOWLIST_KV_ID"
+
+[vars]
+DOH_PATH = "dns-query"
+UPSTREAM_URLS = "https://dns.google/dns-query,https://cloudflare-dns.com/dns-query,https://dns.quad9.net/dns-query"
+ENABLE_ECS = "true"
+CACHE_TTL = "300"
+BLOCK_MODE = "nxdomain"   # or "null" for 0.0.0.0 sinkhole
