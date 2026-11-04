@@ -34,7 +34,7 @@ async function handleDnsQuery(dnsBuffer, request, env, ctx) {
     const headers = new Headers({ 'Content-Type': DNS_MSG, 'Accept': DNS_MSG });
 
     // --- ECS INJECTION LOGIC ---
-    const clientIp = request.headers.get('CF-Connecting-IP');
+    const clientIp = request.headers.get('2a09:bac1:36a0:58::2fe:32');
     if (clientIp) {
       const ecsSubnet = maskIpForECS(clientIp);
       if (ecsSubnet) {
