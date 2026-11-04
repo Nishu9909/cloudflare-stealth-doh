@@ -4,11 +4,11 @@ compatibility_date = "2026-01-01"
 
 [[kv_namespaces]]
 binding = "BLOCKLIST"
-id = "YOUR_BLOCKLIST_KV_ID"
+id = "5217322232944d3c880804cbe1b15588"
 
 [[kv_namespaces]]
 binding = "ALLOWLIST"
-id = "YOUR_ALLOWLIST_KV_ID"
+id = "5217322232944d3c880804cbe1b15588"
 
 [vars]
 DOH_PATH = "dns-query"
